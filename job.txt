@@ -1,1 +1,2 @@
 Check the vacanicies across the departments
+CSE,IT has vacant
