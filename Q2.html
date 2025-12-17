@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechStore - Product Catalog</title>
+</head>
+<body>
+
+    <header>
+        <h1>TechStore Electronics</h1>
+        <h2>Premium Gadgets & Devices</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Available Products</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Laptop Pro 15</td>
+                        <td>Computers</td>
+                        <td>$1299.99</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>P002</td>
+                        <td>Wireless Mouse</td>
+                        <td>Accessories</td>
+                        <td>$29.99</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>P003</td>
+                        <td>4K Monitor</td>
+                        <td>Displays</td>
+                        <td>$499.99</td>
+                        <td>Limited Stock</td>
+                    </tr>
+                    <tr>
+                        <td>P004</td>
+                        <td>Mechanical Keyboard</td>
+                        <td>Accessories</td>
+                        <td>$89.99</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Place Your Order</h3>
+
+            <form>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+
+                <label for="product">Select Product:</label><br>
+                <select id="product" name="product">
+                    <option value="" disabled selected>Choose a product</option>
+                    <option value="P001">Laptop Pro 15 - $1299.99</option>
+                    <option value="P002">Wireless Mouse - $29.99</option>
+                    <option value="P003">4K Monitor - $499.99</option>
+                    <option value="P004">Mechanical Keyboard - $89.99</option>
+                </select><br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required><br><br>
+
+                <label>Shipping Method:</label><br>
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">Standard Shipping (5-7 days)</label><br>
+
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">Express Shipping (2-3 days)</label><br>
+
+                <input type="radio" id="overnight" name="shipping" value="overnight">
+                <label for="overnight">Overnight Shipping (1 day)</label><br><br>
+
+                <label>Additional Services:</label><br>
+                <input type="checkbox" id="giftwrap" name="services" value="giftwrap">
+                <label for="giftwrap">Gift Wrapping (+$5)</label><br>
+
+                <input type="checkbox" id="warranty" name="services" value="warranty">
+                <label for="warranty">Extended Warranty (+$99)</label><br><br>
+
+                <label for="address">Shipping Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your complete address" required></textarea><br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label><br><br>
+
+                <input type="submit" value="Place Order">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechStore Electronics. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
