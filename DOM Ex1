@@ -1,0 +1,11 @@
+<button id="btn">Click</button>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById("btn");
+
+    button.addEventListener("click", function () {
+        console.log("User clicked the button");
+    });
+
+});
