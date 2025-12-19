@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        #result {
+            color: green;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome Page</h2>
+    <label>Enter Your Name:</label>
+    <input type="text" id="username">
+    <button id="btn">Submit</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
+document.addEventListener("DOMContentLoaded", function () 
+{
+    const input = document.getElementById("username");
+    const button = document.getElementById("btn");
+    const result = document.getElementById("result");
+    button.addEventListener("click", function () {
+        const name = input.value;
+        if (name === "") 
+        {
+            result.innerText = "Please enter your name!";
+            result.style.color = "red";
+        } else 
+          {
+            result.innerText = `Hello ${name}, welcome to our website!`;
+            result.style.color = "green";
+        }
+    });
+});
